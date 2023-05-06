@@ -285,7 +285,7 @@ function addCartsFunction() {
       </div>
 
       <transition name="fade" tag="div" v-show="carouselShopShowRef">
-        <button @mouseenter="toTopFunction" class="toTop">
+        <button @click="toTopFunction" class="toTop">
           <div class="toTopButton">▲ TOP</div>
         </button>
       </transition>

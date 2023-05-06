@@ -15,6 +15,15 @@ window.addEventListener("scroll", function () {
   // 當 scrollY大於250 則 showAboutTwoRef 為 true
   showAboutTwoRef.value = window.scrollY > 250;
 });
+
+// 當點擊返回頂部時，滾動到頁面頂部
+function toTopFunction() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+}
 </script>
 
 <template>
@@ -63,6 +72,11 @@ window.addEventListener("scroll", function () {
       </TransitionGroup>
     </div>
   </section>
+  <transition name="fade" tag="div" v-show="showAboutOneRef">
+    <button @mouseenter="toTopFunction" class="toTop">
+      <div class="toTopButton">▲ TOP</div>
+    </button>
+  </transition>
   <section class="footerHolder"></section>
   <Footer />
 </template>
@@ -159,6 +173,24 @@ img {
   transform: translateY(100%);
   opacity: 0;
 }
+
+/* 控制TransitionGroup------------------------------------------------------------------------------------------------------- */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1.5s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+/* up--------------------------------------------------------------------------- */
 
 @media screen and (max-width: 920px) {
   .flex {
