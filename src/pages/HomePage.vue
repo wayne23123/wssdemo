@@ -17,13 +17,13 @@ window.addEventListener("scroll", function () {
 const categoryShowRef = ref(false);
 window.addEventListener("scroll", function () {
   // 當 scrollY大於600 則 categoryShowRef 為 true
-  categoryShowRef.value = window.scrollY > 600;
+  categoryShowRef.value = window.scrollY > 500;
 });
 
 const listUpShowRef = ref(false);
 window.addEventListener("scroll", function () {
   // 當 scrollY大於600 則 categoryShowRef 為 true
-  listUpShowRef.value = window.scrollY > 1100;
+  listUpShowRef.value = window.scrollY > 1000;
 });
 
 // 當點擊返回頂部時，滾動到頁面頂部
@@ -41,7 +41,7 @@ function toTopFunction() {
   <Carousel />
   <section class="sectionHoler40px"></section>
   <Marquee />
-  <section class="sectionHoler40px">今日上架的最新商品!</section>
+
   <section class="sectionCarouselShop">
     <transition name="fade" tag="div">
       <div v-show="carouselShopShowRef"><CarouselShop></CarouselShop></div>
@@ -49,7 +49,7 @@ function toTopFunction() {
   </section>
   <section class="sectionHoler40px"></section>
   <section class="sectionHoler40px">
-    或者依分類挑商品{{ productionStore.searchTerm.value }}
+    <div class="gradientText">或者依分類挑商品</div>
   </section>
   <section class="sectionHoler40px"></section>
 
@@ -136,7 +136,7 @@ function toTopFunction() {
   </section>
   <section class="sectionHoler40px"></section>
   <section class="sectionHoler40px">
-    創造你的風格，從 Wayne's Shopping Spot 開始
+    <div class="gradientText">創造你的風格，從 Wayne's Shopping Spot 開始</div>
   </section>
   <section class="sectionHoler40px"></section>
   <section class="sectionFourCard">
@@ -399,6 +399,19 @@ th {
 .bgcWhite {
   background-color: #fff;
   border: 1px solid black;
+}
+
+.gradientText {
+  background: linear-gradient(45deg, #e10000, #000000, #00d619);
+  background: -webkit-linear-gradient(to top, #ff0000, #000000, #04ff21);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
 }
 
 /* 控制TransitionGroup------------------------------------------------------------------------------------------------------- */

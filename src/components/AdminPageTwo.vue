@@ -402,7 +402,7 @@ function closeFunction() {
 }
 
 td {
-  background-color: #585858;
+  background-color: #fff;
   border-radius: 5px;
   padding: 5px;
 }
@@ -413,7 +413,7 @@ td {
 }
 
 .cardInfo {
-  background-color: #585858;
+  background-color: #fff;
   margin: 2px;
   padding: 15px;
   border-radius: 5px;
