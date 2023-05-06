@@ -2,6 +2,10 @@
 
 你好，這是 Wayne Lu 使用 Vue 練習的第一個購物網站
 
+用 pinia 和 vue 做的購物車系統
+
+在登入頁面可以看到訂單管理 帳號:admin 密碼:1234
+
 # wss
 
 This template should help get you started developing with Vue 3 in Vite.
