@@ -47,19 +47,27 @@ function toTopFunction() {
             我們相信每個人都有自己的風格和品味，我們的產品提供多種不同風格和款式，讓每個客戶都能找到最適合自己的產品。我們堅信，時尚應該是讓人們感到自在和自信的，這也是我們產品的核心價值。"
           </p>
         </div>
-        <div v-if="showAboutOneRef" class="imgAboutLayout">
-          <img class="imgAbout" src="../assets/pictures/openAlert.jpg" alt="" />
+        <div v-if="showAboutOneRef">
+          <div class="imgAboutLayout">
+            <img
+              class="imgAbout"
+              src="../assets/pictures/openAlert.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </TransitionGroup>
       <br />
 
       <TransitionGroup name="listUp" tag="div" class="flex">
-        <div v-if="showAboutTwoRef" class="imgAboutLayout">
-          <img
-            class="imgAbout"
-            src="../assets/pictures/clark-street-q.jpg"
-            alt=""
-          />
+        <div v-if="showAboutTwoRef">
+          <div class="imgAboutLayout">
+            <img
+              class="imgAbout"
+              src="../assets/pictures/clark-street-q.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <div v-if="showAboutTwoRef" class="textAboutLayout">
           <p>
@@ -73,7 +81,7 @@ function toTopFunction() {
     </div>
   </section>
   <transition name="fade" tag="div" v-show="showAboutOneRef">
-    <button @mouseenter="toTopFunction" class="toTop">
+    <button @click="toTopFunction" class="toTop">
       <div class="toTopButton">▲ TOP</div>
     </button>
   </transition>
@@ -139,17 +147,23 @@ p {
 
 .textAboutLayout {
   width: 450px;
-
   color: black;
   padding: 0 50px 0 50px;
 }
 
 .imgAboutLayout {
   width: 450px;
+  height: 290px;
+  overflow: hidden;
 }
 
 img {
   width: 100%;
+}
+
+.imgAbout:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease;
 }
 
 .footerHolder {
@@ -157,6 +171,22 @@ img {
   width: 100vw;
   max-width: 100%;
   background-color: #916800;
+}
+
+.toTop {
+  top: 550px;
+  right: 50px;
+  position: fixed;
+  z-index: 200;
+  background-color: #6f0202;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.toTopButton {
+  color: white;
+  pointer-events: none;
 }
 
 /* up--------------------------------------------------------------------------- */

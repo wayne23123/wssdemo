@@ -366,6 +366,10 @@ table {
 .fourCardDivImg {
   width: 100%;
 }
+.fourCardDivImg:hover {
+  transform: scale(1.3);
+  transition: all 0.5s ease;
+}
 
 .fourCardDivTextLayout {
   color: black;
