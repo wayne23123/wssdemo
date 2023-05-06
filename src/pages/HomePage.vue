@@ -187,7 +187,7 @@ function toTopFunction() {
                     <div class="fourCardDivImgLayout">
                       <img
                         class="fourCardDivImg"
-                        src="../assets/pictures/juli.jpg"
+                        src="../assets/pictures/hanson-l.jpg"
                         alt=""
                       />
                     </div>

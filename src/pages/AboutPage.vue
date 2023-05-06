@@ -39,7 +39,7 @@ window.addEventListener("scroll", function () {
           </p>
         </div>
         <div v-if="showAboutOneRef" class="imgAboutLayout">
-          <img class="imgAbout" src="../assets/pictures/allef.jpg" alt="" />
+          <img class="imgAbout" src="../assets/pictures/openAlert.jpg" alt="" />
         </div>
       </TransitionGroup>
       <br />
