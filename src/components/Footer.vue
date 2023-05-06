@@ -9,17 +9,17 @@
 
       <div class="centerWord">
         <a href="https://github.com/wayne23123/" class="padding"
-          ><img src="../assets/github.svg" alt=""
+          ><img src="../assets/svgs/github.svg" alt=""
         /></a>
         <router-link to="/" class="padding">
-          <img src="../assets/facebook.svg" />
+          <img src="../assets/svgs/facebook.svg" />
         </router-link>
 
         <router-link to="/" class="padding">
-          <img src="../assets/instergram.svg" />
+          <img src="../assets/svgs/instergram.svg" />
         </router-link>
         <router-link to="/" class="padding">
-          <img src="../assets/twitter.svg" />
+          <img src="../assets/svgs/twitter.svg" />
         </router-link>
       </div>
 

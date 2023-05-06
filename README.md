@@ -1,3 +1,7 @@
+# 歡迎來到 Wayne Lu 的第一個 demo 網站
+
+你好，這是 Wayne Lu 使用 Vue 練習的第一個購物網站
+
 # wss
 
 This template should help get you started developing with Vue 3 in Vite.

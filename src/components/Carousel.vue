@@ -10,7 +10,7 @@ const imgs = ref([
 ]);
 
 // showCarousel 代表從第0張開始
-const showCarousel = ref(0);
+const showCarousel = ref(4);
 
 // 綁訂在 TransitionGroup name 預設是 listLeft
 const transitionName = ref("listLeft");

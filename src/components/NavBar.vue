@@ -46,12 +46,12 @@ const cartsTotalPrice = computed(() => {
 <template>
   <section class="header">
     <router-link to="/" class="none"
-      ><div class="svg"><img src="../assets/wss.svg" /></div
+      ><div class="svg"><img src="../assets/svgs/wss.svg" /></div
     ></router-link>
     <div class="navbar">
       <router-link to="/" class="router importSVG"
         ><div class="svg">
-          <img src="../assets/home.svg" />Home
+          <img src="../assets/svgs/home.svg" />Home
         </div></router-link
       >
       <router-link
@@ -59,7 +59,7 @@ const cartsTotalPrice = computed(() => {
         class="router importSVG"
         @mouseenter="productionStore.searchTerm = ''"
         ><div class="svg">
-          <img src="../assets/shop.svg" />Shop
+          <img src="../assets/svgs/shop.svg" />Shop
         </div></router-link
       >
       <router-link to="/about" class="router"> ✒About</router-link>
@@ -70,7 +70,7 @@ const cartsTotalPrice = computed(() => {
         class="router importSVG"
       >
         <div class="svg">
-          <img src="../assets/cart.svg" /> Cart({{ cartsTotalCounter }})
+          <img src="../assets/svgs/cart.svg" /> Cart({{ cartsTotalCounter }})
         </div></router-link
       >
       <router-link to="/login" class="router"><div>✎Login</div> </router-link>

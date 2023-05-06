@@ -67,7 +67,7 @@ function showPageFiveFunction() {
 <template>
   <header class="navbar">
     <router-link to="/">
-      <div class="svg"><img src="../assets/wss.svg" alt="" /></div>
+      <div class="svg"><img src="../assets/svgs/wss.svg" alt="" /></div>
     </router-link>
 
     <router-link to="/">登出 Logout</router-link>
