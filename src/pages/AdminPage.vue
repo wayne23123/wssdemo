@@ -77,19 +77,24 @@ function showPageFiveFunction() {
     <div class="leftNav">
       <div class="leftNavLayout">
         <div @click="showPageOneFunction" class="showPageOne">
-          <button>全部訂單</button>
+          <button v-if="showPageOne" class="active">全部訂單</button>
+          <button v-else="showPageOne">全部訂單</button>
         </div>
         <div @click="showPageTwoFunction" class="showPageOne">
-          <button>未完成的訂單</button>
+          <button v-if="showPageTwo" class="active">未完成的訂單</button>
+          <button v-else="showPageTwo">未完成的訂單</button>
         </div>
         <div @click="showPageThreeFunction" class="showPageOne">
-          <button>已完成的訂單</button>
+          <button v-if="showPageThree" class="active">已完成的訂單</button>
+          <button v-else="showPageThree">已完成的訂單</button>
         </div>
         <div @click="showPageFourFunction" class="showPageOne">
-          <button>上架商品</button>
+          <button v-if="showPageFour" class="active">上架商品</button>
+          <button v-else="showPageFour">上架商品</button>
         </div>
         <div @click="showPageFiveFunction" class="showPageOne">
-          <button>編輯商品</button>
+          <button v-if="showPageFive" class="active">編輯商品</button>
+          <button v-else="showPageFive">編輯商品</button>
         </div>
       </div>
     </div>
@@ -164,6 +169,12 @@ a:hover {
   transition: all 0.4s ease;
   filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(100deg);
 }
+
+.active {
+  background-color: #a50000;
+  color: #fff;
+}
+
 /* V left----------------------------------------------------------------------------- */
 
 .leftNav {
