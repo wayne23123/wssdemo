@@ -5,7 +5,7 @@ import Marquee from "../components/Marquee.vue";
 import { useCartStore } from "../stores/cart";
 import { useSteponeStore } from "../stores/stepone";
 
-const sectionDebugRef = ref(true);
+const sectionDebugRef = ref(false);
 
 const cartStore = useCartStore();
 const steponeStore = useSteponeStore();
