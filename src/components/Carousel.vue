@@ -1,13 +1,12 @@
 <script setup>
 import { ref } from "vue";
+import mikeImg from "@/assets/pictures/mike.jpg";
+import clarkImg from "@/assets/pictures/clark.jpg";
+import carlImg from "@/assets/pictures/carl-r.jpg";
+import hannahImg from "@/assets/pictures/hannah-m.jpg";
+import prudenceImg from "@/assets/pictures/prudence.jpg";
 
-const imgs = ref([
-  "./src/assets/pictures/mike.jpg",
-  "./src/assets/pictures/clark.jpg",
-  "./src/assets/pictures/carl-r.jpg",
-  "./src/assets/pictures/hannah-m.jpg",
-  "./src/assets/pictures/prudence.jpg",
-]);
+const imgs = ref([mikeImg, clarkImg, carlImg, hannahImg, prudenceImg]);
 
 // showCarousel 代表從第0張開始
 const showCarousel = ref(4);

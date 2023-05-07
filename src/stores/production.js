@@ -6,7 +6,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 1,
       order: "",
-      img: "./src/assets/imgs/w001.jpg",
+      img: require("@/assets/imgs/w001.jpg"),
       title: "燈芯絨水手帽",
       category: "hat",
       star: "★★★★",
@@ -37,7 +37,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 2,
       order: "",
-      img: "./src/assets/imgs/w002.jpg",
+      img: require("@/assets/imgs/w002.jpg"),
       title: "Puma Suede Classic",
       category: "shoes",
       star: "★★★★★",
@@ -67,7 +67,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 3,
       order: "",
-      img: "./src/assets/imgs/w003.jpg",
+      img: require("@/assets/imgs/w003.jpg"),
       title: "Champion AS拼色運動外套(綠色)",
       category: "clothes",
       star: "★★★",
@@ -97,7 +97,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 4,
       order: "",
-      img: "./src/assets/imgs/w004.jpg",
+      img: require("@/assets/imgs/w004.jpg"),
       title: "Vans old skool",
       category: "shoes",
       star: "★★★★★",
@@ -127,7 +127,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 5,
       order: "",
-      img: "./src/assets/imgs/w005.jpg",
+      img: require("@/assets/imgs/w005.jpg"),
       title: "STOCK CUFF BEANIE",
       category: "hat",
       star: "★★★★",
@@ -157,7 +157,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 6,
       order: "",
-      img: "./src/assets/imgs/w006.jpg",
+      img: require("@/assets/imgs/w006.jpg"),
       title: "BIG LOGO LOW PRO CAP",
       category: "hat",
       star: "★★★★",
@@ -187,7 +187,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 7,
       order: "",
-      img: "./src/assets/imgs/w007.jpg",
+      img: require("@/assets/imgs/w007.jpg"),
       title: "Champion AS復古拼色外套",
       category: "clothes",
       star: "★★★",
@@ -217,7 +217,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 8,
       order: "",
-      img: "./src/assets/imgs/w008.jpg",
+      img: require("@/assets/imgs/w008.jpg"),
       title: "Champion AS運動長褲(黑色)",
       category: "pants",
       star: "★★★",
@@ -247,7 +247,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 9,
       order: "",
-      img: "./src/assets/imgs/w009.jpg",
+      img: require("@/assets/imgs/w009.jpg"),
       title: "經典嘻哈復古拼接外套",
       category: "clothes",
       star: "★★★★★",
@@ -277,7 +277,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 10,
       order: "",
-      img: "./src/assets/imgs/w010.jpg",
+      img: require("@/assets/imgs/w010.jpg"),
       title: "Adidas Superstar",
       category: "shoes",
       star: "★★★★",
@@ -307,7 +307,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 11,
       order: "",
-      img: "./src/assets/imgs/w011.jpg",
+      img: require("@/assets/imgs/w011.jpg"),
       title: "Nike Air Force 1 '07",
       category: "shoes",
       star: "★★★★★",
@@ -338,7 +338,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 12,
       order: "",
-      img: "./src/assets/imgs/w012.jpg",
+      img: require("@/assets/imgs/w012.jpg"),
       title: "8 BALL TEE",
       category: "clothes",
       star: "★★★",
@@ -368,7 +368,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 13,
       order: "",
-      img: "./src/assets/imgs/w013.jpg",
+      img: require("@/assets/imgs/w013.jpg"),
       title: "TRIBAL MASK TEE",
       category: "clothes",
       star: "★★★",
@@ -398,7 +398,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 14,
       order: "",
-      img: "./src/assets/imgs/w014.jpg",
+      img: require("@/assets/imgs/w014.jpg"),
       title: "Champion AS拼色運動長褲",
       category: "clothes",
       star: "★★★★★",
@@ -428,7 +428,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 15,
       order: "",
-      img: "./src/assets/imgs/w015.jpg",
+      img: require("@/assets/imgs/w015.jpg"),
       title: "Champion 棒球外套",
       category: "clothes",
       star: "★★★★★",
@@ -459,7 +459,7 @@ export const useProductionStore = defineStore("productions", () => {
     {
       id: 16,
       order: "",
-      img: "./src/assets/imgs/w016.jpg",
+      img: require("@/assets/imgs/w016.jpg"),
       title: "CLASSIC COACH JACKET",
       category: "clothes",
       star: "★★★",
