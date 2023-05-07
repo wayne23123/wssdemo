@@ -95,7 +95,7 @@ const cartsTotalPrice = computed(() => {
             商品: {{ cart.title }} size: {{ cart.size }} 數量:
             {{ cart.counter }} 件
             <button
-              @click="cartStore.removeCartItemById(cart.id)"
+              @click="cartStore.removeCartItemById(cart.id, cart.size)"
               class="cartEmptyTopButton"
             >
               刪除商品

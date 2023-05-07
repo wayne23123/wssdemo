@@ -5,7 +5,7 @@ import Marquee from "../components/Marquee.vue";
 import { useCartStore } from "../stores/cart";
 import { useSteponeStore } from "../stores/stepone";
 
-const sectionDebugRef = ref(false);
+const sectionDebugRef = ref(true);
 
 const cartStore = useCartStore();
 const steponeStore = useSteponeStore();
@@ -49,9 +49,8 @@ const useKupengRef = ref(false);
 // 當使用者輸入優惠碼時會觸發
 function useKupengFunction() {
   // 保存當下的 carts 狀態
-  emptyCopyCartsRef.value = cartStore.carts;
   if (inputKupengRef.value == "open") {
-    steponeStore.updateMultipleKupengValues();
+    cartStore.updateMultipleKupengValues();
     useKupengRef.value = true;
     alert("套用成功");
   } else {
@@ -184,7 +183,7 @@ function useKupengFunction() {
   </section>
 
   <section v-show="sectionDebugRef" class="sectionDebug">
-    <div>stepones 訂單的狀態{{ emptyCopyCartsRef }}</div>
+    <div>emptyCopyCartsRef 訂單的狀態{{ emptyCopyCartsRef }}</div>
     <div v-for="cart in cartStore.carts" :key="cart.id">
       carts的狀態{{ cart }}
     </div>

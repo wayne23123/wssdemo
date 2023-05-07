@@ -156,8 +156,15 @@ export const useCartStore = defineStore("carts", () => {
       if (product.counter > 1) {
         product.counter--;
       } else {
-        removeCartItemById(id);
+        removeCartItemById(id, size);
       }
+    }
+  }
+
+  // 更新 carts 陣列中每個元素的 kupeng 屬性為 true
+  function updateMultipleKupengValues() {
+    for (let i = 0; i < carts.value.length; i++) {
+      carts.value[i].kupeng = true;
     }
   }
 
@@ -171,5 +178,6 @@ export const useCartStore = defineStore("carts", () => {
     increaseCartItemById,
     decreaseCartItemById,
     cartsHasProductionFunction,
+    updateMultipleKupengValues,
   };
 });

@@ -4,7 +4,7 @@ import Footer from "../components/Footer.vue";
 import { useSteponeStore } from "../stores/stepone";
 import { usePayStore } from "../stores/pay";
 
-const sectionDebugRef = ref(false);
+const sectionDebugRef = ref(true);
 
 const steponeStore = useSteponeStore();
 const payStore = usePayStore();
