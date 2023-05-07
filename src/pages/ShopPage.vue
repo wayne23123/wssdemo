@@ -254,8 +254,8 @@ function addCartsFunction() {
         >
           <div class="cardImg">
             <router-link to="/demo">
-              <img class="imgSize" :src="require(production.img)" />
-              <img class="imgPOR" :src="require(production.img)" />
+              <img class="imgSize" :src="require(`${production.img}`)" />
+              <img class="imgPOR" :src="require(`${production.img}`)" />
             </router-link>
           </div>
           <div class="cardCart">
