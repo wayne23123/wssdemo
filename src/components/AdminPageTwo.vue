@@ -123,9 +123,11 @@ function closeFunction() {
           >
             總金額: NT$
             {{
-              cartItems.reduce(
-                (acc, cur) => acc + cur.price * cur.counter * 0.7,
-                0
+              Math.floor(
+                cartItems.reduce(
+                  (acc, cur) => acc + cur.price * cur.counter * 0.7,
+                  0
+                )
               )
             }}
           </div>
@@ -136,7 +138,9 @@ function closeFunction() {
           >
             總金額: NT$
             {{
-              cartItems.reduce((acc, cur) => acc + cur.price * cur.counter, 0)
+              Math.floor(
+                cartItems.reduce((acc, cur) => acc + cur.price * cur.counter, 0)
+              )
             }}
           </div>
           <div
@@ -229,15 +233,21 @@ function closeFunction() {
           <div v-if="searchs[0].kupeng" class="cardTitlePrice">
             總金額: NT$
             {{
-              searchs.reduce(
-                (acc, cur) => acc + cur.price * cur.counter * 0.7,
-                0
+              Math.floor(
+                searchs.reduce(
+                  (acc, cur) => acc + cur.price * cur.counter * 0.7,
+                  0
+                )
               )
             }}
           </div>
           <div v-else="searchs[0].kupeng" class="cardTitlePrice">
             總金額: NT$
-            {{ searchs.reduce((acc, cur) => acc + cur.price * cur.counter, 0) }}
+            {{
+              Math.floor(
+                searchs.reduce((acc, cur) => acc + cur.price * cur.counter, 0)
+              )
+            }}
           </div>
           <div v-if="searchs[0].complete" class="green">訂單已經完成</div>
           <div v-else="searchs[0].complete" class="red">訂單尚未完成</div>

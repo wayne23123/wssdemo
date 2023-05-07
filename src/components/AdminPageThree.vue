@@ -123,9 +123,11 @@ function closeFunction() {
           >
             總金額: NT$
             {{
-              cartItems.reduce(
-                (acc, cur) => acc + cur.price * cur.counter * 0.7,
-                0
+              Math.floor(
+                cartItems.reduce(
+                  (acc, cur) => acc + cur.price * cur.counter * 0.7,
+                  0
+                )
               )
             }}
           </div>
@@ -136,7 +138,9 @@ function closeFunction() {
           >
             總金額: NT$
             {{
-              cartItems.reduce((acc, cur) => acc + cur.price * cur.counter, 0)
+              Math.floor(
+                cartItems.reduce((acc, cur) => acc + cur.price * cur.counter, 0)
+              )
             }}
           </div>
           <div
@@ -172,10 +176,13 @@ function closeFunction() {
             <td>數量: {{ cartItem.counter }} 個</td>
             <td v-if="cartItem.kupeng">
               價格: NT$
-              {{ Math.floor(cartItem.price * cartItem.counter * 0.7) }} 元
+              {{
+                Math.floor(Math.floor(cartItem.price * cartItem.counter * 0.7))
+              }}
+              元
             </td>
             <td v-else="cartItem.kupeng">
-              價格: NT$ {{ cartItem.price * cartItem.counter }} 元
+              價格: NT$ {{ Math.floor(cartItem.price * cartItem.counter) }} 元
             </td>
           </tr>
         </table>
@@ -229,9 +236,11 @@ function closeFunction() {
           <div v-if="searchs[0].kupeng" class="cardTitlePrice">
             總金額: NT$
             {{
-              searchs.reduce(
-                (acc, cur) => acc + cur.price * cur.counter * 0.7,
-                0
+              Math.floor(
+                searchs.reduce(
+                  (acc, cur) => acc + cur.price * cur.counter * 0.7,
+                  0
+                )
               )
             }}
           </div>
@@ -253,7 +262,8 @@ function closeFunction() {
             <td>件數: {{ search.counter }} 個</td>
             <td v-if="search.kupeng">
               價格: NT$
-              {{ Math.floor(search.price * search.counter * 0.7) }} 元
+              {{ Math.floor(Math.floor(search.price * search.counter * 0.7)) }}
+              元
             </td>
             <td v-else="search.kupeng">
               價格: NT$ {{ search.price * search.counter }} 元
