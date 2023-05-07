@@ -1,12 +1,28 @@
 import { ref, computed } from "vue";
 import { defineStore } from "pinia";
+import w001 from "@/assets/imgs/w001.jpg";
+import w002 from "@/assets/imgs/w002.jpg";
+import w003 from "@/assets/imgs/w003.jpg";
+import w004 from "@/assets/imgs/w004.jpg";
+import w005 from "@/assets/imgs/w005.jpg";
+import w006 from "@/assets/imgs/w006.jpg";
+import w007 from "@/assets/imgs/w007.jpg";
+import w008 from "@/assets/imgs/w008.jpg";
+import w009 from "@/assets/imgs/w009.jpg";
+import w010 from "@/assets/imgs/w010.jpg";
+import w011 from "@/assets/imgs/w011.jpg";
+import w012 from "@/assets/imgs/w012.jpg";
+import w013 from "@/assets/imgs/w013.jpg";
+import w014 from "@/assets/imgs/w014.jpg";
+import w015 from "@/assets/imgs/w015.jpg";
+import w016 from "@/assets/imgs/w016.jpg";
 
 export const useAdminCartStore = defineStore("admincarts", () => {
   const admincarts = ref([
     {
       id: 1,
       order: "0426162619011",
-      img: "./src/assets/imgs/w001.jpg",
+      img: w001,
       title: "燈芯絨水手帽",
       category: "hat",
       star: "★★★★",
@@ -37,7 +53,7 @@ export const useAdminCartStore = defineStore("admincarts", () => {
     {
       id: 3,
       order: "0426162619011",
-      img: "./src/assets/imgs/w003.jpg",
+      img: w003,
       title: "Champion AS拼色運動外套(綠色)",
       category: "clothes",
       star: "★★★",
@@ -67,7 +83,7 @@ export const useAdminCartStore = defineStore("admincarts", () => {
     {
       id: 1,
       order: "0426163932012",
-      img: "./src/assets/imgs/w001.jpg",
+      img: w001,
       title: "燈芯絨水手帽",
       category: "hat",
       star: "★★★★",
@@ -98,7 +114,7 @@ export const useAdminCartStore = defineStore("admincarts", () => {
     {
       id: 1,
       order: "0426174333013",
-      img: "./src/assets/imgs/w001.jpg",
+      img: w001,
       title: "燈芯絨水手帽",
       category: "hat",
       star: "★★★★",
@@ -128,7 +144,7 @@ export const useAdminCartStore = defineStore("admincarts", () => {
     {
       id: 2,
       order: "0426174333013",
-      img: "./src/assets/imgs/w002.jpg",
+      img: w002,
       title: "Puma Suede Classic",
       category: "shoes",
       star: "★★★★★",
